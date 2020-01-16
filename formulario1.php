@@ -1,6 +1,6 @@
 
 <?php
-error_reporting(0);
+
 // valida fecha
 $fechadia=$_POST['dia'];
 $fechames=$_POST['mes'];
@@ -11,12 +11,13 @@ if(($_POST['dia'] != "") && ($_POST['mes'] != "") &&  ($_POST['ano'] != "")){
     } else {
     $fechaValida=false;
     $valido=false;
+    print("buenas tardes".$_REQUEST['dia'].);
     }
 }
 // valida fecha
 ?>
-<?php
 
+<?php
 error_reporting(0);
    $nombre= $_POST['nom'];
    $dia  = date ("j");
@@ -24,6 +25,8 @@ error_reporting(0);
    $anyo = date ("Y");
   if($_POST['nom'] != ""){
 
+
+    print("buenas tardes".$_REQUEST['dia'].);
 
    printf("<table bordercolor=#006  background=imagenes/luna.jpg>");
    print ("<tr><td>"."<strong>&nbsp;HOLA</strong> como esta tu dia  "."&nbsp;"."<strong>".$_REQUEST['nom']."</strong>"."<br>\n"."&nbsp;hoy"." ".  $dia . " de " . nombreMes($mes) . " <strong>a�o</strong> ". $anyo .""."<strong>. asi</strong> eres en el <strong>UNIVERSO...</strong>"."</td></tr>". "\n");
